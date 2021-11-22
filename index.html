@@ -26,6 +26,7 @@
 		}
 		
 		.bg {
+			position: fixed;
 			top: 0;
 			left: 0;
 			object-fit: cover;
@@ -33,6 +34,10 @@
 		
 		.navigation img {
 			filter: invert(1);
+		}
+		
+		body {
+			overflow: hidden;
 		}
 	</style>
 	<script>
@@ -45,6 +50,14 @@
 				alert("Button AppSwitcher");
 			}
 		}
+		
+		$("body").on("contextmenu",function(e){
+			return false;
+		});
+		
+		$("img").mousedown(function(e){
+			e.preventDefault()
+		});
 	</script>
 </head>
 
