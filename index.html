@@ -25,10 +25,20 @@
 			font-size: 17px;
 		}
 	</style>
+	<script>
+		function navbutton(button) {
+			if (button == 0) {
+				alert("Button Back");
+			} else if (button == 1) {
+				alert("Button Home");
+			} else {
+				alert("Button AppSwitcher");
+			}
+		}
 </head>
 
 <body>
 	<div class="navigation">
-		<a href="javascript:alert("Back button pressed.");"><img src="Back.png" width="50" height="50"></a>
-		<a href="javascript:alert("Home button pressed.");"><img src="Home.png" width="50" height="50"></a>
-		<a href="javascript:alert("App Switcher button pressed.");"><img src="AppSwitcher.png" width="50" height="50"></a>
+		<a onclick="navbutton(0);"><img src="Back.png" width="50" height="50"></a>
+		<a onclick="navbutton(1);"><img src="Home.png" width="50" height="50"></a>
+		<a onclick="navbutton(2);"><img src="AppSwitcher.png" width="50" height="50"></a>
