@@ -51,13 +51,14 @@
 				alert("Button AppSwitcher");
 			}
 		}
-		
-		$("body").on("contextmenu",function(e){
-			return false;
-		});
-		
-		$("img").mousedown(function(e){
-			e.preventDefault()
+		$(document).ready(function(){
+			$("body").on("contextmenu",function(e){
+				return false;
+			});
+
+			$("img").mousedown(function(e){
+				e.preventDefault()
+			});
 		});
 	</script>
 </head>
